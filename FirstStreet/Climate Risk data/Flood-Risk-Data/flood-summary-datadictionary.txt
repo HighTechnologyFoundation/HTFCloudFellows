@@ -1,0 +1,12 @@
+Summary Column Header	Description
+count_property	number of properties
+count_floodfactor1	number of properties with a risk score = 1
+count_floodfactor2	number of properties with a risk score = 2
+count_floodfactor3	number of properties with a risk score = 3
+count_floodfactor4	number of properties with a risk score = 4
+count_floodfactor5	number of properties with a risk score = 5
+count_floodfactor6	number of properties with a risk score = 6
+count_floodfactor7	number of properties with a risk score = 7
+count_floodfactor8	number of properties with a risk score = 8
+count_floodfactor9	number of properties with a risk score = 9
+count_floodfactor10	number of properties with a risk score = 10

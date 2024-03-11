@@ -1,0 +1,11 @@
+count_property,145485001
+count_floodfactor1,114822295
+count_floodfactor2,464816
+count_floodfactor3,3531842
+count_floodfactor4,5581433
+count_floodfactor5,3517240
+count_floodfactor6,5480830
+count_floodfactor7,2925193
+count_floodfactor8,3247573
+count_floodfactor9,3803721
+count_floodfactor10,2031355

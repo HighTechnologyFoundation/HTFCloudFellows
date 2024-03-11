@@ -1,0 +1,11 @@
+count_property,143479339
+count_windfactor1,36343181
+count_windfactor2,43093824
+count_windfactor3,4412381
+count_windfactor4,11628828
+count_windfactor5,2565381
+count_windfactor6,20031638
+count_windfactor7,699300
+count_windfactor8,9686135
+count_windfactor9,9301703
+count_windfactor10,5672776

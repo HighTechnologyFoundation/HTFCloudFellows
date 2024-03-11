@@ -1,0 +1,11 @@
+count_property,143479339
+count_firefactor1,59693384
+count_firefactor2,21037303
+count_firefactor3,26548182
+count_firefactor4,14061910
+count_firefactor5,8090335
+count_firefactor6,4606977
+count_firefactor7,3440220
+count_firefactor8,2674595
+count_firefactor9,1112532
+count_firefactor10,1565045

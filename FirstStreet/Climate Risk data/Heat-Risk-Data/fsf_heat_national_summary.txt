@@ -1,0 +1,11 @@
+count_property,143479339
+count_heatfactor1,6553532
+count_heatfactor2,15827630
+count_heatfactor3,23639867
+count_heatfactor4,16150201
+count_heatfactor5,18304961
+count_heatfactor6,18495510
+count_heatfactor7,15596294
+count_heatfactor8,12417678
+count_heatfactor9,9887447
+count_heatfactor10,6217914

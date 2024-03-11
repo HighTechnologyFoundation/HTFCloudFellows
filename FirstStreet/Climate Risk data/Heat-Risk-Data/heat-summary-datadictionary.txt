@@ -1,0 +1,12 @@
+Summary Column Header	Description
+count_property	number of properties
+count_heatfactor1	number of properties with a risk score = 1
+count_heatfactor2	number of properties with a risk score = 2
+count_heatfactor3	number of properties with a risk score = 3
+count_heatfactor4	number of properties with a risk score = 4
+count_heatfactor5	number of properties with a risk score = 5
+count_heatfactor6	number of properties with a risk score = 6
+count_heatfactor7	number of properties with a risk score = 7
+count_heatfactor8	number of properties with a risk score = 8
+count_heatfactor9	number of properties with a risk score = 9
+count_heatfactor10	number of properties with a risk score = 10
