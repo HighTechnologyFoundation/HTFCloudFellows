@@ -6,7 +6,7 @@ This is the dedicated repository for the [WVHTF Cloud & Climate Data Hub](), pro
 
 ### About the Cloud & Climate Data Hub Website
 
-The Cloud & Climate Data Hub is a platform that provides access to materials on climate and environmental datasets from various sources, facilitating research, decision-making, and education related to climate change and its impacts.
+The Cloud & Climate Data Hub is a platform that provides materials regarding climate and environmental datasets from various sources, facilitating research, decision-making, and education related to climate change and its impacts.
 
 ### Repository Contents
 
