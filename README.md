@@ -2,7 +2,7 @@
 
 This is the dedicated repository for the [WVHTF Cloud & Climate Data Hub](), providing learning resources for utilizing cloud technologies with climate data referenced on the platform.
 
------
+---
 
 ### About the Cloud & Climate Data Hub Website
 
@@ -10,21 +10,29 @@ The Cloud & Climate Data Hub is a platform that provides materials regarding cli
 
 ### Repository Contents
 
-This repository aims to provide Jupyter notebooks, tutorials, and materials focused on:
+This repository aims to provide Jupyter notebooks, tutorials, and other materials focused on:
 
-- Accessing and retrieving referenced datasets
-- Cloud storage and data transfer
+- Accessing and retrieving remote datasets, particularly weather relate data
+- Cloud storage, access, compute, and data transfer
 - Serverless computing and containerization
 - Big data processing frameworks
 - Climate data visualization and dash-boarding
 - Machine learning for climate data analysis
 - Case studies and real-world examples
 
-### Data Providers Currently Referenced in This Repository
+Each folder contains a README with more details about the intent and usages of the examples and resources in said folder.
 
-##### FirstStreet Foundation
+### Examples in This Repository
+
+#### FirstStreet Foundation
+
+This folder contains Jupyter notebooks that demonstrate accessing, processing, and mapping data from [First Street Foundation](https://firststreet.org/) both in the cloud (AWS) and locally.
 
 The [First Street Foundation](https://firststreet.org/) is a non-profit organization dedicated to quantifying and communicating climate risks to help communities and individuals make informed decisions. The Foundation's risk models provide comprehensive datasets on hazards such as floods, wildfires, and heat waves across the United States.
+
+#### More to come...
+
+---
 
 ### Contributing
 
@@ -34,16 +42,17 @@ Contributions are welcome. Follow these steps:
 - Create a new branch
 - Commit your changes
 - Push to your forked repository
-- Submit a pull request
+- Submit a pull request against this repository
 
 Ensure contributions align with project goals and adhere to best practices.
 
------------
+---
+
 <span style="color:grey">
 
 _**Disclaimer:** The code provided in this repository is for educational and demonstration purposes only. It should not be used in production environments without thorough testing, review, and modification to meet specific requirements._
 
-_**Use of this code is at your own risk.** The authors and contributors of this repository assume no liability for any damages, losses, or consequences arising from the use or misuse of the code. It is the user's responsibility to ensure the code meets their requirements and complies with applicable laws and regulations._
+_**Use of this code is at your own risk.** The authors and contributors of this repository assume no liability for any damages, losses, incurred costs, or consequences arising from the use or misuse of the code. It is the user's responsibility to ensure the code meets their requirements and complies with applicable laws and regulations._
 
 _This code is provided "as is," without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or contributors be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the code or its use._
 
