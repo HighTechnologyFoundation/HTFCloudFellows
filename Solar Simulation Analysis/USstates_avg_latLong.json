@@ -243,5 +243,10 @@
     "state":"Wyoming",
     "latitude":42.7475,
     "longitude":-107.2085
+  },
+  {
+    "state":"India",
+    "latitude":21.7679,
+    "longitude":78.8718
   }
 ]
