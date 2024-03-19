@@ -248,5 +248,20 @@
     "state":"India",
     "latitude":21.7679,
     "longitude":78.8718
+  },
+  {
+    "state":"Vietnam",
+    "latitude":16,
+    "longitude":106
+  },
+  {
+    "state":"Puerto Rico",
+    "latitude":18.200178,
+    "longitude":-66.664513
+  },
+  {
+    "state":"Philippines",
+    "latitude":13,
+    "longitude":122
   }
 ]
