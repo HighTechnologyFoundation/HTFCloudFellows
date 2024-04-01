@@ -25,7 +25,7 @@
         {
             "StartYear":"2000",
             "EndYear":"2014",
-            "Resolution":"60",
+            "Resolution":["60"],
             "Dataset":"suny-india-download",
             "Attributes":"ghi,dhi,dni,wspd,surface_temperature,solar_zenith_angle"
         },
@@ -33,7 +33,7 @@
         {
             "StartYear":"2017",
             "EndYear":"2017",
-            "Resolution":"60",
+            "Resolution":["60"],
             "Dataset":"philippines-download",
             "Attributes":"ghi,dhi,dni,wind_speed,air_temperature"
         },
@@ -41,7 +41,7 @@
         {
             "StartYear":"2016",
             "EndYear":"2016",
-            "Resolution":"60",
+            "Resolution":["60"],
             "Dataset":"vietnam-download",
             "Attributes":"ghi,dhi,dni,wind_speed,air_temperature"
         },
