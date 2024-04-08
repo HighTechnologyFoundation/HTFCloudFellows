@@ -4,9 +4,9 @@
 
 Renewable Energy has becoming more important nowadays, especially solar power. Finding right dataset and utilizing data analytics and simulation capabilities on solar data to make better decisions can contribute to the "green environment" significantly. This analysis introduces students to following two things:
 
-1. National Solar Radiance Database (NSRDB) : a high temporal and spatial resolution dataset consisting of the three most widely used measurements of solar radiation—global horizontal, direct normal, and diffuse horizontal irradiance—as well as other meteorological data. [more information to the data](https://nsrdb.nrel.gov/about/what-is-the-nsrdb)
+1. National Solar Radiance Database (NSRDB) : a high temporal and spatial resolution dataset consisting of the three most widely used measurements of solar radiation—global horizontal, direct normal, and diffuse horizontal irradiance—as well as other meteorological data. [More information to the data](https://nsrdb.nrel.gov/about/what-is-the-nsrdb)
 
-2. System Advisor Model (SAM) : a performance and financial model designed to estimate the cost of energy for grid-connected power projects based on installation and operating costs and system design in order to facilitate decision making for people involved in the renewable energy industry. [more information to the software](https://sam.nrel.gov)
+2. System Advisor Model (SAM) : a performance and financial model designed to estimate the cost of energy for grid-connected power projects based on installation and operating costs and system design in order to facilitate decision making for people involved in the renewable energy industry. [More information to the software](https://sam.nrel.gov/)
 
 
 ## Instructions for using this package:
