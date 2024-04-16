@@ -6,7 +6,7 @@ Renewable Energy has becoming more important nowadays, especially solar power. F
 
 1. National Solar Radiation Database (NSRDB) : a high temporal and spatial resolution dataset consisting of the three most widely used measurements of solar radiation—global horizontal, direct normal, and diffuse horizontal irradiance—as well as other meteorological data. [More information to NSRDB data](https://nsrdb.nrel.gov/about/what-is-the-nsrdb)
 
-2. System Advisor Model (SAM) : a performance and financial model designed to estimate the cost of energy for grid-connected power projects based on installation and operating costs and system design in order to facilitate decision making for people involved in the renewable energy industry. [More information to SAM](https://sam.nrel.gov/)
+2. System Advisor Model (SAM) : a performance and financial model designed to estimate the cost of energy for grid-connected power projects based on installation and operating costs and system design in order to facilitate decision making for people involved in the renewable energy industry. [More information to SAM](https://sam.nrel.gov)
 
 
 ## Instructions for using this package:
