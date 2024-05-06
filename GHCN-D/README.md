@@ -1,4 +1,8 @@
 # GHCN-D workflow in Azure DataBricks
 
-## 1. Run `metadata_processing.ipynb` first
-## 2. then run `GHCN in Databricks.ipynb`
+## NOAA Global Historical Climatology Network Daily (GHCN-D)
+GHCN-Daily is a dataset that contains daily observations over global land areas. It contains station-based measurements from land-based stations worldwide, about two thirds of which are for precipitation measurements only (Menne et al., 2012). GHCN-Daily is a composite of climate records from numerous sources that were merged together and subjected to a common suite of quality assurance reviews (Durre et al., 2010).
+
+## Instructions:
+1. Run `metadata_processing.ipynb` first
+2. then run `GHCN in Databricks.ipynb`
