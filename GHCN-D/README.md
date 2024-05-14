@@ -5,4 +5,4 @@ GHCN-Daily is a dataset that contains daily observations over global land areas.
 
 ## Instructions:
 1. Run `station_metadata_processing.ipynb` first
-2. then run `accessing_GHCN_and_run_SQL.ipynb`
+2. then run `accessing_GHCN_run_SQL.ipynb`
