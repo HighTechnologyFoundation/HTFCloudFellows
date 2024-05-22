@@ -17,4 +17,4 @@ GHCN-Daily is a dataset that contains daily observations over global land areas.
 
 ## Dashboard in databricks:
 
-![Getting Started](./images/dashboard%20_image.png)
+![Getting Started](./images/dashboard_image.png)
