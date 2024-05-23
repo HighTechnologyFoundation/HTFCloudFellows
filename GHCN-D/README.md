@@ -20,5 +20,7 @@ GHCN-Daily is a dataset that contains daily observations over global land areas.
 <div align=center>
 <img src="images/GHCN_dynamic_dashboard.gif"/>
 </div>
+
 <br/>
+
 This is a demo of dynamic dashboard with GHCN data in Databricks. You can interact with the `Date` parameter to automatically see the changes across all four visualizations: `Precipitation`, `Temperature`, `Snow`, and `Wind Speed`.  
