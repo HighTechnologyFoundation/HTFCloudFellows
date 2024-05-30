@@ -19,8 +19,9 @@ GHCN-Daily is a dataset that contains daily observations over global land areas.
     - Add two tasks that run the notebooks just imported **in order**.
     - For second task's configuration, specify parameters `start_year` and `end_year`.
     - Click the drop down toggle button next to `Run now`, click `Run now with different parameters`, and modify the year values to fetch the yearly GHCN data of your interests. 
+    <br/>
     <div align=center>
-    <img src="images/ghcn_data_pipelines.png"/>
+    <img src="images/ghcn_data_pipelines.png" width = 500/>
     </div>
     <br/>
 3. In the `Dashboards` section, create dashboards to visualize the results. 
