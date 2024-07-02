@@ -19,5 +19,3 @@ _**Use of this code is at your own risk.** The authors and contributors of this 
 _This code is provided "as is," without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or contributors be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the code or its use._
 
 _By using this code, you agree to indemnify and hold harmless the authors, contributors, and any associated organizations from any claims, liabilities, damages, or expenses arising from your use or distribution of the code._
-
-   
