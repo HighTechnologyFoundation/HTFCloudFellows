@@ -24,11 +24,17 @@ Each folder contains a README with more details about the intent and usages of t
 
 ### Examples in This Repository
 
-#### FirstStreet Foundation
+#### FirstStreet Foundation (FirstStreet)
 
-This folder contains Jupyter notebooks that demonstrate accessing, processing, and mapping data from [First Street Foundation](https://firststreet.org/) both in the cloud (AWS) and locally.
+This folder contains Jupyter notebooks that demonstrates accessing, processing, and mapping data from [First Street Foundation](https://firststreet.org/) both in the cloud (AWS) and locally.
 
 The [First Street Foundation](https://firststreet.org/) is a non-profit organization dedicated to quantifying and communicating climate risks to help communities and individuals make informed decisions. The Foundation's risk models provide comprehensive datasets on hazards such as floods, wildfires, and heat waves across the United States.
+
+#### NOAA Global Forecast System (GFS)
+
+This folder contains a Jupyter notebook demonstrating accessing a GRIB data file from an Azure data repository, processing it using Xarray and Pandas, and visualizing data. The notebook will execute in a cloud environment, a Databricks environment, or a PC environment. The visualizations and processing mainly focus on the continental United States, but the principles used are easily modified for other regions.
+
+The NOAA Global Forecast System (GFS) is a global numerical weather prediction system containing a global computer model and variational analysis run by the U.S. National Weather Service (NWS). The model is divided into 127 vertical layers extending from the Earth's surface to the mesopause (~80km). The entire globe is covered by the GFS at a base horizontal resolution of 13 kilometers between grid points. The GFS is run operationally four times a day and produces forecasts for up to 16 days in advance. Hundreds Of atmospheric and land-soil variables are available through this dataset, from temperatures, winds, and precipitation to soil moisture and atmospheric ozone concentration.
 
 #### More to come...
 
