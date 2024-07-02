@@ -1,0 +1,49 @@
+{
+  "InTheUS": {
+    "HighResolution": {
+      "StartYear": "2018",
+      "EndYear": "2022",
+      "Resolution": ["5", "15", "30", "60"],
+      "Dataset": "psm3-5min-download",
+      "Attributes": "ghi,dhi,dni,wind_speed,air_temperature,solar_zenith_angle"
+    },
+    "LowResoluion": {
+      "StartYear": "1998",
+      "EndYear": "2022",
+      "Resolution": ["30", "60"],
+      "Dataset": "psm3-2-2-download",
+      "Attributes": "ghi,dhi,dni,wind_speed,air_temperature,solar_zenith_angle"
+    }
+  },
+
+  "OutTheUS": {
+    "India": {
+      "StartYear": "2000",
+      "EndYear": "2014",
+      "Resolution": ["60"],
+      "Dataset": "suny-india-download",
+      "Attributes": "ghi,dhi,dni,wspd,surface_temperature,solar_zenith_angle"
+    },
+    "Philippines": {
+      "StartYear": "2017",
+      "EndYear": "2017",
+      "Resolution": ["60"],
+      "Dataset": "philippines-download",
+      "Attributes": "ghi,dhi,dni,wind_speed,air_temperature"
+    },
+    "Vietnam": {
+      "StartYear": "2016",
+      "EndYear": "2016",
+      "Resolution": ["60"],
+      "Dataset": "vietnam-download",
+      "Attributes": "ghi,dhi,dni,wind_speed,air_temperature"
+    },
+    "Puerto Rico": {
+      "StartYear": "1998",
+      "EndYear": "2017",
+      "Resolution": ["5", "30", "60"],
+      "Dataset": "puerto-rico-download",
+      "Attributes": "ghi,dhi,dni,wind_speed,air_temperature,solar_zenith_angle"
+    }
+  }
+}
