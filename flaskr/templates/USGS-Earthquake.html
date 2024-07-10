@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body {
+    background-image: url('https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-7709.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    }
+    img {
+    mix-blend-mode: multiply;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <title>USGS_Earthquake</title>
+</head>
+<body>
+    <img src= "{{url_for('static', filename='earthquake.png')}}" width="100%" >
+    <img src= "{{url_for('static', filename='Taiwan.png')}}" width="50%" >
+    <img src= "{{url_for('static', filename='Taiwan_2.png')}}" width="49%" height="1100">
+</body>
+</html>

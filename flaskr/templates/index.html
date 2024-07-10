@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    h1{
+       font-size: 45px; 
+       text-align: center;
+    }
+    h3 {text-align: center;}
+    ul{
+    font-size:30px;
+    display: table;
+    margin: 0 auto;
+    }
+    li{
+        margin: 15px 0;
+    }
+    body {
+    background-image: url('https://editors-cdn.template.net/BG.png-b6e9c8c2-3629-4c8d-babd-e63d97dfd239.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    }
+    .topleft {
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <title>Justin's little climate world</title>
+</head>
+<body>
+    <h1>
+        Gallery of Climate Weather data Visulization 
+    </h1>
+    <h3>
+        Current Time : {{date_time}}
+    </h3>
+    <ul>
+        <li><a href="{{ url_for('GFS') }}"> Global Forecast System (GFS)</a></li>
+        <li><a href="{{ url_for('FirstStreet') }}"> FirstStreet - Climate Risk Assessment</a></li>
+        <li><a href="{{ url_for('GHCN') }}"> Global Historical Climatology Network (GHCN) </a></li>
+        <li><a href="{{ url_for('NSRDB_PySAM') }}"> National Solar Radiance Database x System Advisor Model </a></li>
+        <li><a href="{{ url_for('Sup3rCC') }}"> Sup3rCC: Super-Resolution for Renewable Energy Resource Data<br> With Climate Change Impacts </a></li>
+        <li><a href="{{ url_for('USGS_Earthquake') }}"> USGS-Earthquake </a></li>
+    </ul>
+    <img src= "{{url_for('static', filename='HTF Logo_Primary.jpg')}}" class="topleft" width="300" height="100"/>
+</body>
+</html>

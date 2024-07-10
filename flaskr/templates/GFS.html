@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    h1 {text-align: center;}
+    h2 {text-align: center;}
+    body {
+    background-image: url('https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-7709.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    }
+    img {
+    mix-blend-mode: multiply;
+    }
+    .topleft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <title>GFS</title>
+</head>
+<body>
+    <h1>
+        Animation of Temperature and Relative Humidity forecast up to 96 hours
+    </h1>
+    <h2>
+        Data Source : <a href="https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php">Global Forecast System (GFS)</a> with 1.00 degree spatial resolution
+    </h2>
+<img src= "{{url_for('static', filename='temp_forecast.gif')}}" width = '50%'/>
+<img src= "{{url_for('static', filename='relative_humidity_forecast.gif')}}" width = "49%"/>
+</body>
+</html>

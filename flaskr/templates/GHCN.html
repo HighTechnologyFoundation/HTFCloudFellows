@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body {
+    background-image: url('https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-7709.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    }
+    img {
+    mix-blend-mode: multiply;
+    }
+    a {
+    font-size: 50px;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <title>GHCN</title>
+</head>
+<body>
+<img src= "{{url_for('static', filename='GHCN_dynamic_dashboard.gif')}}" width="1000" >
+<a href="GHCN/plotly">Interactive chart with Plotly of California</a>
+</body>
+</html>
