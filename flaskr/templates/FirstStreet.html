@@ -11,15 +11,26 @@
     img {
     mix-blend-mode: multiply;
     }
-    .topleft {
-    position: absolute;
-    top: 0;
-    left: 0;
-    }
     </style>
     <meta charset="UTF-8">
     <title>FirstStreet</title>
 </head>
 <body>
+    <select name="disaster" method="GET" action="/" >
+        {% for disaster in disasters %}
+            <option value="{{disaster}}" SELECTED>{{disaster}}</option>"
+        {% endfor %}
+    </select>
+    
+    <select name="region" method="GET" action="/">
+        {% for region in regions %}
+            <option value="{{region}}" SELECTED>{{region}}</option>"
+        {% endfor %}
+    </select>
+
+    <form action="{{ url_for('process_data') }}" method="post"> 
+        <button type="submit">Generate Plots</button> 
+    </form> 
+
 </body>
 </html>

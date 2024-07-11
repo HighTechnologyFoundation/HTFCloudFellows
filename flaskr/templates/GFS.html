@@ -3,7 +3,8 @@
 <head>
     <style>
     h1 {text-align: center;}
-    h2 {text-align: center;}
+    h2 {text-align: left;}
+    h3 {text-align: center;}
     body {
     background-image: url('https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-7709.jpg');
     background-repeat: no-repeat;
@@ -12,6 +13,7 @@
     }
     img {
     mix-blend-mode: multiply;
+    margin-top: -150px;
     }
     .topleft {
     position: absolute;
@@ -27,9 +29,13 @@
         Animation of Temperature and Relative Humidity forecast up to 96 hours
     </h1>
     <h2>
-        Data Source : <a href="https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php">Global Forecast System (GFS)</a> with 1.00 degree spatial resolution
+        The NOAA Global Forecast System (GFS) is a global numerical weather prediction system containing a global computer model and variational analysis run by the U.S. National Weather Service (NWS). The model is divided into 127 vertical layers extending from the surface to the mesopause (~80km). The entire globe is covered by the GFS at a base horizontal resolution of 13 kilometers between grid points. The GFS is run operationally four times a day and produces forecasts for up to 16 days in advance. Hundreds Of atmospheric and land-soil variables are available through this dataset, from temperatures, winds, and precipitation to soil moisture and atmospheric ozone concentration.
     </h2>
-<img src= "{{url_for('static', filename='temp_forecast.gif')}}" width = '50%'/>
-<img src= "{{url_for('static', filename='relative_humidity_forecast.gif')}}" width = "49%"/>
+    <h3>
+        Source : <a href="https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php">Global Forecast System (GFS)</a> with 1.00 degree spatial resolution
+    </h3>
+    <br>
+<img src= "{{url_for('static', filename='temp_forecast.gif')}}" width = '50%' height="800px"/>
+<img src= "{{url_for('static', filename='relative_humidity_forecast.gif')}}" width = "49%" height="800px"/>
 </body>
 </html>

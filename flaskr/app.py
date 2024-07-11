@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 
 
 app = Flask(__name__)
@@ -15,9 +15,16 @@ def home():
 def GFS():
     return render_template('GFS.html')
 
-@app.route('/FirstStreet')
+@app.route('/FirstStreet', methods=['GET'])
 def FirstStreet():
-    return render_template('FirstStreet.html')
+    disasters = ['fire', 'flood', 'heat', 'wind']
+    regions = ['United States', 'West Virginia']
+    return render_template('FirstStreet.html', disasters = disasters, regions = regions)
+
+@app.route('/FirstStreet/plots', methods=['POST']) 
+def process_data(): 
+    # your python function
+    return 'Still working on it!' 
 
 @app.route('/GHCN')
 def GHCN():

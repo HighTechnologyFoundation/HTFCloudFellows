@@ -2,6 +2,16 @@
 <html lang="en">
 <head>
     <style>
+    h1{
+    font-size: 50px;
+    text-align: center;
+    }
+    h2{
+    text-align: left;
+    }
+    h3{
+    text-align: center;
+    }
     body {
     background-image: url('https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-7709.jpg');
     background-repeat: no-repeat;
@@ -16,6 +26,16 @@
     <title>Sup3rCC</title>
 </head>
 <body>
-    <img src= "{{url_for('static', filename='sup3rCC.png')}}" width="1000" >
+    <h1>
+        Sup3rCC
+    </h1>
+    <h2>
+        The Super-Resolution for Renewable Energy Resource Data with Climate Change Impacts (Sup3rCC) data is a collection of 4km hourly wind, solar, temperature, humidity, and pressure fields for the contiguous United States under various climate change scenarios. It utilizes a generative machine learning approach called Sup3r (Super-Resolution for Renewable Energy Resource Data) to downscale Global Climate Model (GCM) data.
+    </h2>
+    <h3>
+        Source : <a href="https://github.com/NREL/sup3r">https://github.com/NREL/sup3r</a>
+    </h3>
+    <br>
+    <img src= "{{url_for('static', filename='sup3rCC.png')}}" width="100%" height="1200">
 </body>
 </html>

@@ -13,7 +13,7 @@
     margin: 0 auto;
     }
     li{
-        margin: 15px 0;
+    margin: 15px 0;
     }
     body {
     background-image: url('https://editors-cdn.template.net/BG.png-b6e9c8c2-3629-4c8d-babd-e63d97dfd239.png');
@@ -27,13 +27,19 @@
     top: 0;
     left: 0;
     }
+    .github_image{
+    mix-blend-mode: multiply;
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+    }
     </style>
     <meta charset="UTF-8">
     <title>Justin's little climate world</title>
 </head>
 <body>
     <h1>
-        Gallery of Climate Weather data Visulization 
+        Gallery of Climate Weather data Visualization 
     </h1>
     <h3>
         Current Time : {{date_time}}
@@ -47,5 +53,8 @@
         <li><a href="{{ url_for('USGS_Earthquake') }}"> USGS-Earthquake </a></li>
     </ul>
     <img src= "{{url_for('static', filename='HTF Logo_Primary.jpg')}}" class="topleft" width="300" height="100"/>
+    <a href="https://github.com/HighTechnologyFoundation/HTFCloudFellows/tree/Justin-Lin">
+        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" class="github_image" width="100" height="100" >
+    </a>
 </body>
 </html>

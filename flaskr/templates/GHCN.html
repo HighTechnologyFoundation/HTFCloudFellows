@@ -2,6 +2,16 @@
 <html lang="en">
 <head>
     <style>
+    h1{
+    font-size: 50px;
+    text-align: center;
+    }
+    h2{
+    text-align: left;
+    }
+    h3{
+    text-align: center;
+    }
     body {
     background-image: url('https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-7709.jpg');
     background-repeat: no-repeat;
@@ -11,15 +21,23 @@
     img {
     mix-blend-mode: multiply;
     }
-    a {
-    font-size: 50px;
-    }
     </style>
     <meta charset="UTF-8">
     <title>GHCN</title>
 </head>
 <body>
-<img src= "{{url_for('static', filename='GHCN_dynamic_dashboard.gif')}}" width="1000" >
-<a href="GHCN/plotly">Interactive chart with Plotly of California</a>
+<h1>
+    Global Historical Climatology Network - Daily (GHCN-D)
+</h1>
+<h2>
+    GHCN-Daily is a dataset that contains daily observations over global land areas. It contains station-based measurements from land-based stations worldwide, about two thirds of which are for precipitation measurements only (Menne et al., 2012). GHCN-Daily is a composite of climate records from numerous sources that were merged together and subjected to a common suite of quality assurance reviews (Durre et al., 2010).
+</h2>
+<h3>
+    Source : <a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily">https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily</a>
+</h3>
+<br>
+<img src= "{{url_for('static', filename='GHCN_dynamic_dashboard.gif')}}" style="margin-left: 40px;" width="45%" height="500">
+<img src= "{{url_for('static', filename='GHCN_static_dashboard.png')}}" style="margin-left: 80px;" width="45%" height="500">
+<a href="GHCN/plotly" style="font-size: 50px;">Interactive chart with Plotly of California</a>
 </body>
 </html>
