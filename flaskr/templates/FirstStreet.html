@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <style>
+    h1 {text-align: center;}
+    h2 {text-align: left;}
+    h3 {text-align: center;}
     body {
     background-image: url('https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-7709.jpg');
     background-repeat: no-repeat;
@@ -11,26 +15,53 @@
     img {
     mix-blend-mode: multiply;
     }
+    select { font-size:20px; }
     </style>
     <meta charset="UTF-8">
     <title>FirstStreet</title>
 </head>
 <body>
-    <select name="disaster" method="GET" action="/" >
-        {% for disaster in disasters %}
-            <option value="{{disaster}}" SELECTED>{{disaster}}</option>"
-        {% endfor %}
-    </select>
-    
-    <select name="region" method="GET" action="/">
+    <h1>
+        FirstStreet - Climate Risk Assessment
+    </h1>
+    <h2>
+        The First Street Foundation is a non-profit organization dedicated to quantifying and communicating climate risks to help communities and individuals make informed decisions. The Foundation's risk models provide comprehensive datasets on hazards such as floods, wildfires, and heat waves across the United States.
+    </h2>
+    <h3>
+        Source : <a href="https://firststreet.org/methodology/">https://firststreet.org/methodology/</a>
+    </h3>
+    <br>
+    <form action="{{ url_for ('test') }}" method="post">
+        <select name="disaster">
+            {% for disaster in disasters %}
+                <option value="{{disaster}}">{{disaster}}</option>"
+            {% endfor %}
+        </select>
+    </form>
+    <select name="region">
         {% for region in regions %}
             <option value="{{region}}" SELECTED>{{region}}</option>"
         {% endfor %}
     </select>
 
-    <form action="{{ url_for('process_data') }}" method="post"> 
-        <button type="submit">Generate Plots</button> 
-    </form> 
-
+    <button type='button' id ='retrieve' style="width: 150px; height: 25px; font-size: 20px;">Generate Plots</button>
+    <img src="" id="myimg" />
+    {{a}}
 </body>
+<script>
+    $(document).ready(function() {
+       $('#retrieve').click(function(){
+           $.ajax({
+           url: "{{ url_for ('return_img') }}",
+           type: "GET",
+           success: function(response) {
+               $("#myimg").attr('src', '/static/' + response);
+          },
+          error: function(xhr) {
+            //Do Something to handle error
+         }
+         });
+       });
+    });
+  </script>
 </html>

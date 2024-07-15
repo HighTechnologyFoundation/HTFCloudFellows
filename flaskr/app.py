@@ -15,16 +15,24 @@ def home():
 def GFS():
     return render_template('GFS.html')
 
-@app.route('/FirstStreet', methods=['GET'])
+@app.route('/FirstStreet', methods=['POST', 'GET'])
 def FirstStreet():
-    disasters = ['fire', 'flood', 'heat', 'wind']
+    disasters = ['Fire', 'Flood', 'Heat', 'Wind']
     regions = ['United States', 'West Virginia']
+    if request.method == 'POST':
+        a = request.form.get('disaster')
     return render_template('FirstStreet.html', disasters = disasters, regions = regions)
 
-@app.route('/FirstStreet/plots', methods=['POST']) 
-def process_data(): 
-    # your python function
-    return 'Still working on it!' 
+@app.route('/FirstStreet/test') 
+def test(): 
+    if request.method == 'POST':
+        a = request.form.get('disaster')
+    return str(a)
+
+@app.route('/FirstStreet/plots') 
+def return_img(): 
+    # python code
+    return 'FirstStreet_Flood_US_Bar.png' 
 
 @app.route('/GHCN')
 def GHCN():
