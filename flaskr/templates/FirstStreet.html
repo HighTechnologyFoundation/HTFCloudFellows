@@ -4,7 +4,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <style>
     h1 {text-align: center;}
-    h2 {text-align: left;}
+    h2 {text-align: left; margin-left: 120px; margin-right: 120px;}
     h3 {text-align: center;}
     body {
     background-image: url('https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-7709.jpg');
@@ -15,7 +15,7 @@
     img {
     mix-blend-mode: multiply;
     }
-    select { font-size:20px; }
+    select { font-size:20px;}
     </style>
     <meta charset="UTF-8">
     <title>FirstStreet</title>
@@ -31,37 +31,21 @@
         Source : <a href="https://firststreet.org/methodology/">https://firststreet.org/methodology/</a>
     </h3>
     <br>
-    <form action="{{ url_for ('test') }}" method="post">
-        <select name="disaster">
+    <form action="/FirstStreet" method="POST">
+        <select name="disaster" style="margin-left: 120px;">
             {% for disaster in disasters %}
-                <option value="{{disaster}}">{{disaster}}</option>"
+                <option value="{{disaster}}" >{{disaster}}</option>"
             {% endfor %}
         </select>
+        <select name="region">
+            {% for region in regions %}
+                <option value="{{region}}" >{{region}}</option>"
+            {% endfor %}
+        </select>
+        <input type="submit" value="Generate Plot" style="width: 150px; height: 25px; font-size: 20px;">
     </form>
-    <select name="region">
-        {% for region in regions %}
-            <option value="{{region}}" SELECTED>{{region}}</option>"
-        {% endfor %}
-    </select>
-
-    <button type='button' id ='retrieve' style="width: 150px; height: 25px; font-size: 20px;">Generate Plots</button>
-    <img src="" id="myimg" />
-    {{a}}
+    <br>
+    <img src= "{{ url_for('static', filename = file) }}" width = '45%' style="margin-left: 70px;" />
+    <img src= "{{ url_for('static', filename = map_file) }}" width = '45%' style="margin-left: 20px;" />
 </body>
-<script>
-    $(document).ready(function() {
-       $('#retrieve').click(function(){
-           $.ajax({
-           url: "{{ url_for ('return_img') }}",
-           type: "GET",
-           success: function(response) {
-               $("#myimg").attr('src', '/static/' + response);
-          },
-          error: function(xhr) {
-            //Do Something to handle error
-         }
-         });
-       });
-    });
-  </script>
 </html>

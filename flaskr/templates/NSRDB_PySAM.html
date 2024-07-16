@@ -2,24 +2,33 @@
 <html lang="en">
 <head>
     <style>
+    h1 {text-align: center;}
+    h2 {text-align: left; margin-left: 120px; margin-right: 120px;}
+    h3 {text-align: center;}
     body {
     background-image: url('https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-7709.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
     }
-    img {
-    mix-blend-mode: multiply;
-    }
-    .topleft {
-    position: absolute;
-    top: 0;
-    left: 0;
-    }
-    </style>
+     </style>
     <meta charset="UTF-8">
     <title>NSRDB_PySAM</title>
 </head>
 <body>
+    <h1>
+        Solar Simulation Analysis
+    </h1>
+    <h2>
+        National Solar Radiation Database (NSRDB) : a high temporal and spatial resolution dataset consisting of the three most widely used measurements of solar radiation—global horizontal, direct normal, and diffuse horizontal irradiance—as well as other meteorological data. <br><br>
+        System Advisor Model (SAM) : a performance and financial model designed to estimate the cost of energy for grid-connected power projects based on installation and operating costs and system design in order to facilitate decision making for people involved in the renewable energy industry.
+
+    </h2>
+    <h3>
+        Source : <a href="https://nsrdb.nrel.gov/about/what-is-the-nsrdb">NSRDB</a> ; <a href="https://sam.nrel.gov">SAM</a>
+    </h3>
+    <img src= "{{ url_for('static', filename = 'NSRDB_Nevada_Yearly.png') }}" width = '43%' style="margin-left: 120px; margin-top: 70px;" />
+    <img src= "{{ url_for('static', filename = 'NSRDB_Nevada_Monthly.png') }}" width = '42%' style="margin-left: 30px; margin-right: 120px;" />
+    <img src= "{{ url_for('static', filename = 'NSRDB_Nevada_Daily.png') }}" width = '43%' style="margin-left: 120px; margin-top: 70px;" />
 </body>
 </html>

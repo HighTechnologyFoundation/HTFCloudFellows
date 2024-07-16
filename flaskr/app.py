@@ -19,20 +19,36 @@ def GFS():
 def FirstStreet():
     disasters = ['Fire', 'Flood', 'Heat', 'Wind']
     regions = ['United States', 'West Virginia']
-    if request.method == 'POST':
-        a = request.form.get('disaster')
-    return render_template('FirstStreet.html', disasters = disasters, regions = regions)
+    dis = request.form.get("disaster")
+    reg = request.form.get("region")
+    file = 'First-Street-Logo-Old.png'
+    map_file = 'First-Street-Logo-Old.png'
+    if dis == 'Fire' and reg == 'West Virginia':
+        file = 'FirstStreet_Fire_WV_Bar.png'
+        map_file = 'FirstStreet_Fire_WV_Map.png'
+    if dis == 'Fire' and reg == 'United States':
+        file = 'FirstStreet_Fire_US_Bar.png'
+        map_file = 'FirstStreet_Fire_US_Map.png'
+    if dis == 'Heat' and reg == 'West Virginia':
+        file = 'FirstStreet_Heat_WV_Bar.png'
+        map_file = 'FirstStreet_Heat_WV_Map.png'
+    if dis == 'Heat' and reg == 'United States':
+        file = 'FirstStreet_Heat_US_Bar.png'
+        map_file = 'FirstStreet_Heat_US_Map.png'
+    if dis == 'Flood' and reg == 'West Virginia':
+        file = 'FirstStreet_Flood_WV_Bar.png'
+        map_file = 'FirstStreet_Flood_WV_Map.png'
+    if dis == 'Flood' and reg == 'United States':
+        file = 'FirstStreet_Flood_US_Bar.png'
+        map_file = 'FirstStreet_Flood_US_Map.png'
+    if dis == 'Wind' and reg == 'West Virginia':
+        file = 'FirstStreet_Wind_WV_Bar.png'
+        map_file = 'FirstStreet_Wind_WV_Map.png'
+    if dis == 'Wind' and reg == 'United States':
+        file = 'FirstStreet_Wind_US_Bar.png'
+        map_file = 'FirstStreet_Wind_US_Map.png'
+    return render_template('FirstStreet.html', disasters = disasters, regions = regions, file = file, map_file = map_file)
 
-@app.route('/FirstStreet/test') 
-def test(): 
-    if request.method == 'POST':
-        a = request.form.get('disaster')
-    return str(a)
-
-@app.route('/FirstStreet/plots') 
-def return_img(): 
-    # python code
-    return 'FirstStreet_Flood_US_Bar.png' 
 
 @app.route('/GHCN')
 def GHCN():

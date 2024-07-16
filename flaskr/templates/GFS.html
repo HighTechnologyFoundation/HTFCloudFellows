@@ -3,7 +3,7 @@
 <head>
     <style>
     h1 {text-align: center;}
-    h2 {text-align: left;}
+    h2 {text-align: left; margin-left: 120px; margin-right: 120px;}
     h3 {text-align: center;}
     body {
     background-image: url('https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-7709.jpg');
@@ -35,7 +35,7 @@
         Source : <a href="https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php">Global Forecast System (GFS)</a> with 1.00 degree spatial resolution
     </h3>
     <br>
-<img src= "{{url_for('static', filename='temp_forecast.gif')}}" width = '50%' height="800px"/>
-<img src= "{{url_for('static', filename='relative_humidity_forecast.gif')}}" width = "49%" height="800px"/>
+<img src= "{{url_for('static', filename='temp_forecast.gif')}}" width = '48%' style="margin-left: 30px;" />
+<img src= "{{url_for('static', filename='relative_humidity_forecast.gif')}}" width = "48%" />
 </body>
 </html>
