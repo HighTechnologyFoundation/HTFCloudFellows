@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     h1 {text-align: center;}
     h2 {text-align: left; margin-left: 120px; margin-right: 120px;}
@@ -34,6 +35,9 @@
     <h3>
         Source : <a href="https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/gfs.php">Global Forecast System (GFS)</a> with 1.00 degree spatial resolution
     </h3>
+    <a href="{{ url_for('index') }}">
+        <i class="fa fa-home" style="font-size: 50px; position: absolute; top: 0; margin-left: 10px;"></i>
+    </a>
     <br>
 <img src= "{{url_for('static', filename='temp_forecast.gif')}}" width = '48%' style="margin-left: 30px;" />
 <img src= "{{url_for('static', filename='relative_humidity_forecast.gif')}}" width = "48%" />

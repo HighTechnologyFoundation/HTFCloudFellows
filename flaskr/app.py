@@ -11,6 +11,10 @@ def home():
     date_time = now.strftime("%m/%d/%Y %H:%M:%S")
     return render_template('index.html', date_time=date_time)
 
+@app.route('/')
+def index():
+    return render_template("index.html")
+
 @app.route('/GFS')
 def GFS():
     return render_template('GFS.html')

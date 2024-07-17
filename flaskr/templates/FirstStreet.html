@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     h1 {text-align: center;}
     h2 {text-align: left; margin-left: 120px; margin-right: 120px;}
@@ -30,6 +31,9 @@
     <h3>
         Source : <a href="https://firststreet.org/methodology/">https://firststreet.org/methodology/</a>
     </h3>
+    <a href="{{ url_for('index') }}">
+        <i class="fa fa-home" style="font-size: 50px; position: absolute; top: 0; margin-left: 10px;"></i>
+    </a>
     <br>
     <form action="/FirstStreet" method="POST">
         <select name="disaster" style="margin-left: 120px;">

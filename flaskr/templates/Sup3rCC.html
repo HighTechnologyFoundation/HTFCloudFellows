@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     h1{
     font-size: 50px;
@@ -38,6 +39,9 @@
     <h3>
         Source : <a href="https://github.com/NREL/sup3r">https://github.com/NREL/sup3r</a>
     </h3>
+    <a href="{{ url_for('index') }}">
+        <i class="fa fa-home" style="font-size: 50px; position: absolute; top: 0; margin-left: 10px;"></i>
+    </a>
     <br>
     <img src= "{{url_for('static', filename='sup3rCC.png')}}" height="1200">
 </body>
