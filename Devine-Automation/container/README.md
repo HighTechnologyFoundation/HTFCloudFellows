@@ -41,6 +41,6 @@ terraform destroy
 This will ensure AWS credits are not wasted while the application is being modified locally. The approximate cost for 5 minutes of runtime is $0.10. *However, the cost for 24 hours of runtime is approximately $30.00.*
 
 ## References
-https://earthly.dev/blog/deploy-dockcontainers-to-awsecs-using-terraform/
-https://www.linkedin.com/pulse/how-upload-docker-images-aws-ecr-using-terraform-hendrix-roa
+* https://earthly.dev/blog/deploy-dockcontainers-to-awsecs-using-terraform/
+* https://www.linkedin.com/pulse/how-upload-docker-images-aws-ecr-using-terraform-hendrix-roa
 
