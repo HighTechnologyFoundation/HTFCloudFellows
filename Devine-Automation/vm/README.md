@@ -15,7 +15,7 @@ In a terminal, run ```aws configure``` and input the Access Key ID and Secret Ac
 Following the guide at https://developer.hashicorp.com/terraform/install#linux, install the terraform package.
 
 ### SSH Key
-Run the following command to generate an ssh key for use when interacting with your VM. By default it will be stored in `~/.ssh/id_rsa` if this is not where you choose to store your key, the path to the keys must be updated in `main.tf`.
+Run the following command to generate an ssh key for use when interacting with your VM. By default it will be stored in `~/.ssh/id_rsa` if this is not where you choose to store your key, the path to the keys must be updated in `main.tf`. When prompted, do not provide a passphrase as this will not function properly with the terraform provisioners.
 ```
 ssh-keygen -t rsa -b 4096
 ```
