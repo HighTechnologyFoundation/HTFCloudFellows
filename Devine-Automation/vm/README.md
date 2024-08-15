@@ -44,7 +44,7 @@ terraform destroy
 Using an ssh client and the ssh key generated in previous steps, connect to the public IP of your AWS VM. Upon connecting, you can run the following commands to build and run your webapp container:
 ```
 docker build -t whatever .
-docker run -it -p *host_port*:*container_port* whatever
+docker run -it -p host_port:container_port whatever
 ```
 In the above commands, replace *whatever* with your desired container name. Also, replace *host_port* and *container_port* with the correct port numbers that the webserver runs on.
 
