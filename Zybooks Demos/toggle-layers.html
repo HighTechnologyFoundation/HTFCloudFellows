@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Map with Toggleable Layers</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/esri-leaflet@3.0.5/dist/esri-leaflet.js"></script>
+</head>
+<body>
+    <div id="map" style="width: 100%; height: 600px;"></div>
+    <script>
+        // Initialize the map and set its view
+        var map = L.map('map').setView([39.8283, -98.5795], 4); // Centered on the USA
+
+        // Add a base tile layer (e.g., OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        // Elevation layer (ESRI World Elevation service)
+        var elevationLayer = L.esri.tiledMapLayer({
+            url: 'https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer',
+            opacity: 0.75
+        });
+
+        // Humidity layer (Example from NASA)
+        var humidityLayer = L.esri.imageMapLayer({
+            url: 'https://di-caloes.img.arcgis.com/arcgis/rest/services/NDFD/Min_Relative_Humidity/ImageServer',
+            opacity: 0.75
+        });
+
+        // Solar Irradiance layer (Global Solar Atlas)
+        var solarLayer = L.esri.imageMapLayer({
+            url: 'https://gis.earthdata.nasa.gov/image/rest/services/POWER/POWER_901_MONTHLY_RADIATION_UTC/ImageServer',
+            opacity: 0.75
+        });
+
+        // USDA Cropland Data Layer with filter for strawberry (value 221)
+        var strawberryLayer = L.esri.imageMapLayer({
+            url: 'https://pdi.scinet.usda.gov/image/rest/services/CDL_WM/ImageServer',
+            where: "Class_Name LIKE 'Strawberries'", // Filter for strawberries
+            opacity: 0.75
+        });
+
+        // Layer control
+        var baseLayers = {
+            "OpenStreetMap": L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '© OpenStreetMap'
+            })
+        };
+
+        var overlays = {
+            "Elevation": elevationLayer,
+            "Humidity": humidityLayer,
+            "Solar Irradiance": solarLayer,
+            "Strawberry Cropland": strawberryLayer
+        };
+
+        L.control.layers(baseLayers, overlays).addTo(map);
+
+        // Add layers to the map initially (optional)
+        elevationLayer.addTo(map);
+        strawberryLayer.addTo(map);
+                // Add an info control to display pixel values
+                var info = L.control({position: 'bottomleft'});
+
+info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info');
+    this.update();
+    return this._div;
+};
+
+info.update = function (props) {
+    this._div.innerHTML = props ? 'Pixel Value: ' + props.value : 'Hover over the map';
+};
+
+info.addTo(map);
+
+
+    </script>
+</body>
+</html>

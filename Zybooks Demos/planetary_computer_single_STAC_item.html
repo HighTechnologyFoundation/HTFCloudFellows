@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Planetary Computer STAC Item with Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $.ajax({
+        url: "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=landsat-c2-l2&item=LC09_L2SP_018033_20240806_02_T1&assets=red&assets=green&assets=blue&color_formula=gamma+RGB+2.7%2C+saturation+1.5%2C+sigmoidal+RGB+15+0.55&format=png",
+        success: function (tileJson) {
+          var map = L.map("map", {
+            center: [tileJson.center[1], tileJson.center[0]],
+            zoom: 13,
+          });
+          var baseLayer = L.tileLayer(
+            "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}.png"
+          ).addTo(map);
+
+          var tiles = tileJson.tiles[0];
+
+          var tileLayer = L.tileLayer(tiles, {
+            minZoom: tileJson.minzoon,
+            maxZoom: tileJson.maxzoom,
+          }).addTo(map);
+
+          $.ajax({
+            url: "https://planetarycomputer.microsoft.com/api/stac/v1/collections/landsat-c2-l2/items/LC09_L2SP_018033_20240806_02_T1",
+            success: function (item) {
+              map.whenReady(function () {
+                footprint = new L.GeoJSON(item);
+                L.geoJSON(item, {
+                  style: {
+                    color: "#05a6f0",
+                    opacity: 0.7,
+                    fillOpacity: 0,
+                  },
+                }).addTo(map);
+
+                map.fitBounds(footprint.getBounds());
+              });
+            },
+          });
+        },
+      });
+    </script>
+</body>
+</html>

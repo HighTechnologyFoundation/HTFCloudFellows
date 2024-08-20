@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map with GeoJSON Layer - USA</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Map with GeoJSON Layer of the Contiguous United States</h1>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([39.8283, -98.5795], 4); // Center of the contiguous US
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Example GeoJSON data: boundaries of a few US states
+        var geojsonFeature = {
+            "type": "Feature",
+            "properties": {
+                "name": "Kansas"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [-101.9060, 37.0004],
+                        [-94.6178, 37.0004],
+                        [-94.6178, 40.0031],
+                        [-101.9060, 40.0031],
+                        [-101.9060, 37.0004]
+                    ]
+                ]
+            }
+        };
+
+        // Adding GeoJSON layer to the map
+        L.geoJSON(geojsonFeature).addTo(map);
+    </script>
+</body>
+</html>
