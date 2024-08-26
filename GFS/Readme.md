@@ -8,4 +8,4 @@ The NOAA Global Forecast System (GFS) is a global numerical weather prediction s
 
 Temperature            |  Relative Humidity
 :-------------------------:|:-------------------------:
-<img src=".\img\temp_forecast.gif" />|<img src=".\img\relative_humidity_forecast.gif" />
+<img src=".\img\temp_forecast.gif" width = '94.5%'/>|<img src=".\img\relative_humidity_forecast.gif" />
