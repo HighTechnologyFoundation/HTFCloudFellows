@@ -2,7 +2,7 @@
 
 ## Background
 
-Renewable Energy has becoming more important nowadays, especially solar power. Finding right dataset and utilizing data analytics and simulation capabilities on solar data to make better decisions can contribute to the "green environment" significantly. This analysis introduces students to following two things:
+The increasing importance of renewable energy sources, particularly solar power, underscores the need for robust data analytics and simulation capabilities to inform decision-making. This analysis introduces students to the utilization of two key tools: 
 
 1. National Solar Radiation Database (NSRDB) : a high temporal and spatial resolution dataset consisting of the three most widely used measurements of solar radiation—global horizontal, direct normal, and diffuse horizontal irradiance—as well as other meteorological data. [More information to NSRDB data](https://nsrdb.nrel.gov/about/what-is-the-nsrdb)
 
@@ -11,8 +11,7 @@ Renewable Energy has becoming more important nowadays, especially solar power. F
 
 ## Instructions for using this package:
 
-[NSRDB_SAM_Analysis.ipynb](https://github.com/HighTechnologyFoundation/HTFCloudFellows/blob/Justin-Lin/Solar%20Simulation%20Analysis/Jupyter%20Notebooks/NSRDB_SAM_Analysis.ipynb) would be the starting point. Everything goes from there. 
-
+The accompanying Jupyter Notebook, [NSRDB_SAM_Analysis.ipynb](./Jupyter%20Notebooks/NSRDB_SAM_Analysis.ipynb), serves as a starting point for this analysis. From here, further instructions and workflow details are provided.
 
 ---
 
